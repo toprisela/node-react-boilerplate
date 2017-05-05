@@ -30,6 +30,11 @@ module.exports = {
       }]
     }]
   },
+  resolve: {
+    alias: {
+      Components: path.resolve(__dirname, 'src/js/components/')
+    }
+  },
   plugins: [
     new htmlWebpackPlugin({
       template: 'index.html',

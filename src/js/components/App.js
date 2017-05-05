@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Navigation from './navigation/Navigation';
-import Routes from './Routes';
+import Navigation from 'Components/navigation/Navigation';
+import Routes from 'Components/Routes';
 
 class App extends Component {
   render() {
