@@ -21,6 +21,14 @@
     ],
     //custom rules
     "rules": {
+        "indent": [
+            2,
+            "tab"
+        ],
+        "react/jsx-indent": [
+            2,
+            "tab"
+        ],
         "react/jsx-filename-extension": 0,
         "react/jsx-max-props-per-line": [
             2,

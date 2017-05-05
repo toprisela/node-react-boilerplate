@@ -7,8 +7,8 @@ import App from 'Components/App';
 require('../css/index.scss');
 
 ReactDOM.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>,
-    document.getElementById('container')
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>,
+	document.getElementById('container')
 )
