@@ -37,8 +37,4 @@ jspm_packages
 .node_repl_history
 
 #vs code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+/.vscode
