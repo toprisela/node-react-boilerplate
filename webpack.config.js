@@ -4,6 +4,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 //const extractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+  devtool: 'source-map',
   entry: path.resolve(__dirname, 'src', 'js', 'Main.js'),
   output: {
     path: path.join(__dirname, 'dist'),
@@ -21,12 +22,12 @@ module.exports = {
       exclude: /node_modules/,
       //use: extractTextPlugin.extract({ fallback: "style-loader", use: ["css-loader", "sass-loader"] }),
       use: [{
-         loader: "style-loader" // creates style nodes from JS strings
-       }, {
-         loader: "css-loader" // translates CSS into CommonJS
-       }, {
-         loader: "sass-loader" // compiles Sass to CSS
-       }]
+        loader: "style-loader" // creates style nodes from JS strings
+      }, {
+        loader: "css-loader" // translates CSS into CommonJS
+      }, {
+        loader: "sass-loader" // compiles Sass to CSS
+      }]
     }]
   },
   plugins: [

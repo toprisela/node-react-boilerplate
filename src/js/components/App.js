@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { Router } from 'react-router';
+
+import Navigation from './navigation/Navigation';
+import Routes from './Routes';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <p className="blue">Hello World!</p>
+      <div className="container">
+        <Navigation />
+        <Routes />
       </div>
     );
   }
