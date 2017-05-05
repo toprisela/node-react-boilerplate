@@ -1,5 +1,33 @@
+//OFF = 0, WARN = 1, ERROR = 2;
 {
     "env": {
-        "node": true
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/all"
+    ],
+    //custom rules
+    "rules": {
+        "react/jsx-filename-extension": 0,
+        "react/jsx-max-props-per-line": [
+            2,
+            {
+                "maximum": 2,
+                "when": "multiline"
+            }
+        ]
     }
 }

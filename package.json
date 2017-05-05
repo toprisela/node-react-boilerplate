@@ -4,7 +4,7 @@
   "description": "Boilerplate for node.js + react.js with react router application with server side rendering",
   "main": "index.js",
   "scripts": {
-    "start": "rm -rf dist && webpack && webpack-dev-server --port 3000",
+    "start": "rm -rf dist && webpack-dev-server --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,6 +36,10 @@
     "webpack": "^2.5.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-react": "^6.10.3",
     "webpack-dev-server": "^2.4.5"
   }
 }

@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from 'Components/pages/Home';
 import About from 'Components/pages/About';
 import NotFound from 'Components/errors/NotFound';
 
-class Routes extends Component {
-  render() {
-    return (
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/about' component={About} />
+const Routes = () =>
+    <Switch>
+        <Route component={Home} exact path='/' />
+        <Route component={About} path='/about' />
         <Route component={NotFound} />
-      </Switch>
-    );
-  }
-}
+    </Switch>;
 
 export default Routes;

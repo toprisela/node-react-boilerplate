@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Navigation from 'Components/navigation/Navigation';
 import Routes from 'Components/Routes';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="container">
+const App = () =>
+    <div className="container">
         <Navigation />
         <Routes />
-      </div>
-    );
-  }
-}
+    </div>;
 
 export default App;

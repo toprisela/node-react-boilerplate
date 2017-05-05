@@ -11,10 +11,26 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [{
+    rules: [
+      /*{
+      test: /\.js$/,
+      enforce: 'pre',
+      exclude: /node_modules/,
+      include: path.resolve(__dirname, '/src/js'),
+      use: [
+        {
+          loader: 'eslint-loader',
+          options: {
+            failOnWarning: true,
+            failOnError: true
+          }
+        }
+      ]
+    },*/
+    {
       test: /\.(js|jsx)$/,
       include: path.resolve(__dirname, 'src', 'js'),
-      use: 'babel-loader'
+      use: ['babel-loader', 'eslint-loader']
     },
     {
       test: /\.scss$/,
