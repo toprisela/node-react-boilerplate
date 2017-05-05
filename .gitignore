@@ -38,3 +38,6 @@ jspm_packages
 
 #vs code
 /.vscode
+
+#dist folder
+/dist
