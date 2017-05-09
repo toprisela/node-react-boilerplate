@@ -1,15 +1,26 @@
 module.exports = {
 	"rules": {
-		"block-no-empty": null,
+		"block-no-empty": true,
 		"color-no-invalid-hex": true,
-		"comment-empty-line-before": ["always", {
-			"ignore": ["stylelint-command", "after-comment"]
-		}],
 		"declaration-colon-space-after": "always",
-		"indentation": [4, {
-			"except": ["value"]
-		}],
+		"declaration-colon-space-before": "never",
+		"function-comma-space-after": "always",
+		"function-url-quotes": "always",
+		"media-feature-colon-space-after": "always",
+		"media-feature-colon-space-before": "never",
+		"media-feature-name-no-vendor-prefix": true,
 		"max-empty-lines": 2,
-		"unit-whitelist": ["em", "rem", "%", "s"]
+		"number-leading-zero": "never",
+		"number-no-trailing-zeros": true,
+		"property-no-vendor-prefix": true,
+		"declaration-block-no-duplicate-properties": true,
+		"declaration-block-trailing-semicolon": "always",
+		"selector-list-comma-newline-after": "always-multi-line",
+		"selector-no-id": true,
+		"string-quotes": "double",
+		"value-no-vendor-prefix": true,
+		"function-linear-gradient-no-nonstandard-direction": true,
+		"selector-no-universal": true,
+		"declaration-block-no-shorthand-property-overrides": true
 	}
 }
